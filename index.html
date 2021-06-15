@@ -5,24 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- El device-width dice que tomará de referencia el ancho del dispositivo-->
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css"> <!-- ./ Indice la carpeta donde me encuentro, y es para decir que ligue ese styles.css-->
 </head>
 <body>
     <h1> Lorem Ipsum </h1>
     <h2> ¿Qué es Lorem Ipsum? </h2>
-    <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y 
-        archivos de texto. Lorem Ipsum ha sido el texto de relleno 
+    <p> <i><b>Lorem Ipsum</b></i> es simplemente el texto de relleno de las imprentas y <!-- b es para negritas, y u para Subrayado, e i para cursiva-->
+        archivos de texto. <i><b>Lorem Ipsum</b></i> ha sido el texto de relleno 
         estándar de las industrias desde el año 1500, cuando un 
         impresor (N. del T. persona que se dedica a la imprenta) desconocido 
         usó una galería de textos y los mezcló de tal manera que logró hacer 
         un libro de textos especimen. No sólo sobrevivió 500 años, sino que 
         tambien ingresó como texto de relleno en documentos electrónicos, 
         quedando esencialmente igual al original. Fue popularizado en los 
-        60s con la creación de las hojas "Letraset", las cuales contenian pasajes 
-        de Lorem Ipsum, y más recientemente con software de autoedición, como por 
-        ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum. </p>
+        60s con la creación de las hojas <u>"Letraset"</u>, las cuales contenian pasajes 
+        de <i><b>Lorem Ipsum</b></i>, y más recientemente con software de autoedición, como por 
+        ejemplo <u>Aldus PageMaker</u>, el cual incluye versiones de <i><b>Lorem Ipsum</b></i>. </p>
     <h3> ¿De dónde viene? </h3>
     <h4> ¿Por qué lo usamos? </h4>
     <h5> ¿Dónde puedo conseguirlo? </h5>
     <h6> Hola </h6>
+
+
+    <img alt="Logo de capterra" src = https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png  >
+    
+    
+    <form action="">
+        <label for="Nombre"> Nombre: </label>
+        <input type="text" placeholder="Nombre" id="Nombre" name="Nombre" required>
+
+        <label for="Apellido"> Apellido: </label>
+        <input type="text" placeholder="Apellido" id="Apellido" name="Apellido"><br><br>
+        
+        <label for="Edad"> Edad: </label>
+        <input type="number" placeholder="Edad" id="Edad" name="Edad" min = 18 max = 35><br><br>
+        
+        <label for="Correo"> Email: </label>
+        <input type="email" placeholder="Email" id="Correo" name="Correo"><br><br>
+
+        <label for="Contraseña"> Contraseña: </label>
+        <input type= "password" placeholder="Contraseña" id= "Contraseña" name= "Contraseña"><br><br>
+
+        <button type= "submit"> Enviar</button>
+        
+        <!-- Place holder pone un texto estático en el input-->
+        <!-- Required quiere decir que ese campo es requerido-->
+    </form>
+    
+    
 </body>
 </html>
