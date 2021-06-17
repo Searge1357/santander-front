@@ -29,7 +29,7 @@ body{
     margin-left: 20px;
     margin-right: 20px; */
     margin: 40px 0px 20px 20px; /*Márgenes de Arriba/Derecha/Abajo/Izquierda*/
-    font-size: 0; /*COn esto eliminamos los espacios entre letras y espacios, para evitar que consuma más espacio, pero las desaparecerá ya que es tamaño 0*/
+    font-size: 0; /*Con esto eliminamos los espacios entre bloques, pero también reduce a tamaño 0 las letras*/
     line-height: 45 px;
 }
 
@@ -38,12 +38,14 @@ li {
     /* Hay dos opciones block o inline
     li es de tipo block por lo que consume todo el espacio
     al ponerle inline le decimos que solo ocupe el espacio necesario
+    Con inline no podemos cambiar los valores de márgenes, altura, etc
+    con inline-block sí
     */
 }
 
 .header > * { /*Con el > * estamos diciendo que a todos sus hijos se les aplique eso, o sea todo lo que está dentro*
     es decir también aplica paara el nav y div*/
-    display: inline-block;
+    display: inline-block; /*Este combina lo mejor de inline y block*/
     font-size: 16px; /*Así hacemos que vuelvan aparecer las letras*/
     vertical-align: middle;
     height: 100%; /*Agarrará 100% del tamaño que tenemos*/
@@ -53,7 +55,7 @@ li {
 .logo { /* El nombre de la clase podemos poner el que sea*/
     width: 15%; /*Cuanto espacio de pantalla queremos que use*/
     background-color: green;
-    /*Estos 3 Son los espacios que se dejan dento de los límites*/ 
+    /*Estos 3 Son los espacios que se dejan dento de los límites
     padding-top: 15px; 
     padding-left: 15px;
     /*
@@ -62,8 +64,10 @@ li {
     /*margin: 50px; Este engloba los 4 márgenes*/
 }
 
-.navbar {
+.navbar { /*Este es del div*/
     width: 70%; 
+    text-align: left;
+
 }
 
 .actions {
