@@ -31,10 +31,13 @@ body{
     margin: 40px 0px 20px 20px; /*Márgenes de Arriba/Derecha/Abajo/Izquierda*/
     font-size: 0; /*Con esto eliminamos los espacios entre bloques, pero también reduce a tamaño 0 las letras*/
     line-height: 45 px;
+    font-family: sans-serif; /*Tipo de letra*/
 }
 
 li {
     display: inline; 
+    margin-right: 25px;
+    margin-left: 25px; 
     /* Hay dos opciones block o inline
     li es de tipo block por lo que consume todo el espacio
     al ponerle inline le decimos que solo ocupe el espacio necesario
@@ -45,11 +48,12 @@ li {
 
 .header > * { /*Con el > * estamos diciendo que a todos sus hijos se les aplique eso, o sea todo lo que está dentro*
     es decir también aplica paara el nav y div*/
+    /*Esto es toda la barra de navegación*/
     display: inline-block; /*Este combina lo mejor de inline y block*/
     font-size: 16px; /*Así hacemos que vuelvan aparecer las letras*/
     vertical-align: middle;
     height: 100%; /*Agarrará 100% del tamaño que tenemos*/
-    line-height: 45px;
+    line-height: 45px; /*Espaciado entre las letras*/
 }
 
 .logo { /* El nombre de la clase podemos poner el que sea*/
@@ -64,14 +68,34 @@ li {
     /*margin: 50px; Este engloba los 4 márgenes*/
 }
 
-.navbar { /*Este es del div*/
-    width: 70%; 
+.navbar { /*Este es del div, es el menú de navegación*/
+    width: 70%; /*El margin right de más abajo hace que la suma de los elementos
+    de más de 100%, por lo que lo de abajo se recorre hacia abajo, por eso bajé esto a 
+    60%*/
     text-align: left;
-
+    color: #025157;
 }
 
 .actions {
     width: 15%;
     text-align: right;
-    font-size: 14 px;
+    font-size: 14px;
+    /*margin-right: 10px;*/
+}
+
+.actions > * { /*Para que cada una de las acciones tenga margen en costados de 10px*/
+    margin-right: 10px; 
+    margin-left: 10px; 
+}
+
+.actions a{
+    color: #67b54b;
+}
+
+.actions button{
+    color: white;
+    background-color: #67b54b;
+    padding:12px 14px 12px 14px; /*Como reloj, Arriba/Derecha/Abajo/Izquierda*/
+    border: 0; /*Para que no tenga borde*/
+    border-radius: 5px; /*Esto hace que tenga esquinas redondas*/
 }
