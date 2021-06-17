@@ -84,6 +84,7 @@ li {
 }
 
 .actions > * { /*Para que cada una de las acciones tenga margen en costados de 10px*/
+/*Si se lo pusiera en actions, separaría 10px actions de lo demás, no entre los elementos de dentro*/    
     margin-right: 10px; 
     margin-left: 10px; 
 }
@@ -96,6 +97,10 @@ li {
     color: white;
     background-color: #67b54b;
     padding:12px 14px 12px 14px; /*Como reloj, Arriba/Derecha/Abajo/Izquierda*/
-    border: 0; /*Para que no tenga borde*/
+    border: 0; /*Para que no tenga borde, o sea algo negro que lo rodee*/
     border-radius: 5px; /*Esto hace que tenga esquinas redondas*/
 }
+
+/*Yo entiendo que margen es la cantidad de espacio entre elementos, y padding es el espacio entre lo de dentro del contenedor y el borde
+    El padding está dentro del borde, y el margin afuera del borde
+*/
