@@ -23,3 +23,51 @@ body{
     background-color: #fffbf7 ; /*Cambia el color de fondo del cuerpo*/
     background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');
 }
+
+.header { /*Con el punto estoy diciendo que es de una clase */
+    /*margin-top: 40px; /*Todos los px van sin espacio del número
+    margin-left: 20px;
+    margin-right: 20px; */
+    margin: 40px 0px 20px 20px; /*Márgenes de Arriba/Derecha/Abajo/Izquierda*/
+    font-size: 0; /*COn esto eliminamos los espacios entre letras y espacios, para evitar que consuma más espacio, pero las desaparecerá ya que es tamaño 0*/
+    line-height: 45 px;
+}
+
+li {
+    display: inline; 
+    /* Hay dos opciones block o inline
+    li es de tipo block por lo que consume todo el espacio
+    al ponerle inline le decimos que solo ocupe el espacio necesario
+    */
+}
+
+.header > * { /*Con el > * estamos diciendo que a todos sus hijos se les aplique eso, o sea todo lo que está dentro*
+    es decir también aplica paara el nav y div*/
+    display: inline-block;
+    font-size: 16px; /*Así hacemos que vuelvan aparecer las letras*/
+    vertical-align: middle;
+    height: 100%; /*Agarrará 100% del tamaño que tenemos*/
+    line-height: 45px;
+}
+
+.logo { /* El nombre de la clase podemos poner el que sea*/
+    width: 15%; /*Cuanto espacio de pantalla queremos que use*/
+    background-color: green;
+    /*Estos 3 Son los espacios que se dejan dento de los límites*/ 
+    padding-top: 15px; 
+    padding-left: 15px;
+    /*
+    margin-left: 20px;
+    margin-right: 20px;*/
+    /*margin: 50px; Este engloba los 4 márgenes*/
+}
+
+.navbar {
+    width: 70%; 
+}
+
+.actions {
+    width: 15%;
+    text-align: right;
+    font-size: 14 px;
+}
