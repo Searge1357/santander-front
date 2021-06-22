@@ -78,7 +78,17 @@
         <!-- Required quiere decir que ese campo es requerido-->
     </form>
     <section>
-        <video controls src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4" poster="https://conceptodefinicion.de/wp-content/uploads/2014/03/codigo-.jpg"></video> <!--Se pueden tener videos localmente o de un servidor, si solo ponemos 
+        <video controls poster="https://conceptodefinicion.de/wp-content/uploads/2014/03/codigo-.jpg">
+        <!--El source es para decir que se tienen distintos formatos de video, el navegador mostrará con el que es más compatible-->
+        <source
+        type= "video/mp4"
+        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4" 
+        >
+        <source
+        type= "video/webm"
+        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4" 
+        >
+        </video> <!--Se pueden tener videos localmente o de un servidor, si solo ponemos 
         el src, no se puede reproducir, controlar, ni nada-->
         <!-- Controls permite que se pueda manipular el video-->
         <!-- Es una imagen que aparece antes de que se reproduzca el video-->
