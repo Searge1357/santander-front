@@ -20,8 +20,9 @@ button{
 }
 
 body{
-    background-color: #fffbf7 ; /*Cambia el color de fondo del cuerpo*/
-    background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');
+    background-color: #b0a192 ; /*Cambia el color de fondo del cuerpo*/
+    /*background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');*/
+
 }
 
 .header { /*Con el punto estoy diciendo que es de una clase */
