@@ -28,7 +28,7 @@ body{
     /*margin-top: 40px; /*Todos los px van sin espacio del número
     margin-left: 20px;
     margin-right: 20px; */
-    margin: 40px 0px 20px 20px; /*Márgenes de Arriba/Derecha/Abajo/Izquierda*/
+    margin: 40px 20px 0 20px; /*Márgenes de Arriba/Derecha/Abajo/Izquierda*/
     font-size: 0; /*Con esto eliminamos los espacios entre bloques, pero también reduce a tamaño 0 las letras*/
     line-height: 45 px;
     font-family: sans-serif; /*Tipo de letra*/
@@ -104,3 +104,48 @@ li {
 /*Yo entiendo que margen es la cantidad de espacio entre elementos, y padding es el espacio entre lo de dentro del contenedor y el borde
     El padding está dentro del borde, y el margin afuera del borde
 */
+
+.Publicidad {
+    color: #025157; /*Color de la letra*/
+    margin-left: 20px;
+}
+
+.Publicidad > form{
+    display: flex; /*Esta me colocará los elementos de forma horizontal, uno a lado de otro*/
+}
+
+.Publicidad > p{
+    color: #343434;
+}
+
+.Publicidad h2 {
+    font-family: Arial;
+    color: #025157; /*Color de la letra*/
+    
+}
+
+.promo{
+    display: flex; /*Esto va hacer que los elementos de la misma sección
+    se pongan a lado del video */
+    width: 70%;
+    margin: 100px auto; 
+    align-items: center;
+}
+
+.Contenedor{
+    display: flex;
+    flex-direction: column; /*Esto alineará la imagen y el video que están dentro del contenedor*/
+    align-items: center;
+}
+
+.Contenedor img{
+    width: 120px ;
+}
+
+.fixed-header {
+    position: fixed; /*Para que la barra se quede fija, y se mueva mientras bajemos*/
+    background-color: white;
+    top:0; 
+    left:0; 
+    right:0; 
+}
