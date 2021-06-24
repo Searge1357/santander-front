@@ -3,7 +3,8 @@
 h1{
     color: rgb(36, 36, 173);    
     font-size: 100px; 
-    margin-top: 200px;
+    margin-top: 200px; /*Por lo que hicimos al header, se perdió el margen que había, por lo que
+    agregamos esto para que recupere el magen original*/
     
 }
 h2{
