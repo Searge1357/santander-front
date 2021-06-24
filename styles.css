@@ -154,3 +154,37 @@ li {
     left:0; 
     right:0; 
 }
+
+.features{
+    display: grid; 
+    /*grid-template-columns: 300px 300px; al poner dos veces 300, decimos que queremos 2 columnas*/
+    /*grid-template-columns: repeat(2, 300px); lo mismo que arriba*/
+    /*grid-template-columns: 500px 1fr; El espacio que tiene disponible lo dividirá*/
+    
+    
+    /*
+    Reto 3 primera parte
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 330px);
+    */
+
+    /*Reto 3 segunda parte, es lo mismo que la primera, pero con atajos*/
+    grid-template:  repeat(2, 330px) / repeat(2,1fr) ;
+
+    /*Una forma de poder usar la unidad fr para asignar el alto de las filas sería indicando un tamaño fijo al elemento contenedor, en nuestro caso, podríamos hacer:
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 660px;
+  grid-template-rows: repeat(2, 1fr);
+}
+*/
+}
+
+.feature-art{
+    background-color: lightcyan;
+    margin: 10px; 
+    width: 40%;
+    height: 50px;
+}
