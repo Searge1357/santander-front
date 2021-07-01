@@ -5,37 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- El device-width dice que tomará de referencia el ancho del dispositivo-->
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+
     <link rel="stylesheet" href="./styles.css"> <!-- ./ Indice la carpeta donde me encuentro, y es para decir que ligue ese styles.css-->
 </head>
 <body>
-    <section class="fixed-header">
-
-    <header class="header"> <!-- Es el encabezado-->
-        <a href= "./index.html" class = "logo"> <!-- Nos manda a la página principal, el a es para poner un link-->
-            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Logo de Matcha"> <!-- Cuando aplane esta imagen me mandará al menú de inicio-->
-        </a> 
-
-        <nav class="navbar"> <!-- Sección de navegación, es el bloque principal
-        de enlaces de navegación-->
-            <ul> <!-- Lista no ordenada -->
-                <li><a href="./index.html">Blog Creator</a></li>
-                <li><a href="./index.html">Content Library</a></li>
-                <li><a href="./index.html">Templates</a></li>
-                <li><a href="./index.html">Pricing</a></li>
-                <li><a href="./index.html">Customers</a></li>
-                <li><a href="./index.html">Blog</a></li>
-                
-            </ul>
-
-        </nav>
-            
-        <div class="actions">
-            <a href="./login">Sign In</a> <!-- Aquí ya no tendría bullet, pero seguiría el formato de lista-->
-            <button type="submit">Start Free Trial</button>
-        </div>
-
+    <!-- Esto es lo que se verá en el navegador web -->
+  <!-- <section class="fixed-header">
+    <header class="header">
+      <a href="/" class="logo">
+        <img
+          src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
+          alt="Matcha"
+        />
+      </a>
+      <nav class="navbar">
+        <ul class="menu">
+          <li class="menu-item">Platform</li>
+          <li class="menu-item">Pricing</li>
+          <li class="menu-item">Customers</li>
+          <li class="menu-item">Resources</li>
+          <li class="menu-item">About</li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a>Sign In</a>
+        <button>Start free trial</button>
+      </div>
     </header>
-    </section>
+  </section> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img
+        src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
+        alt="Matcha"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Platform</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Customers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <a>Sign In</a>
+        <button>Start free trial</button>
+      </form>
+    </div>
+  </nav>
+
+  
 
     <main>
     <h1> Lorem Ipsum </h1>
@@ -55,35 +104,38 @@
     <h4> ¿Por qué lo usamos? </h4>
     <h5> ¿Dónde puedo conseguirlo? </h5>
     <h6> Hola </h6>
+    <figure class="banner">
+        <img alt="Logo de capterra" src = https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png  >
+    </figure>
     </main>
 
-    <img alt="Logo de capterra" src = https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png  >
     
-    
-    <form action="">
-        <label for="Nombre"> Nombre: </label>
-        <input type="text" placeholder="Nombre" id="Nombre" name="Nombre" required>
+    <article class="publish">
+        <form action="">
+            <label for="Nombre"> Nombre: </label>
+            <input type="text" placeholder="Nombre" id="Nombre" name="Nombre" required><br><br>
 
-        <label for="Apellido"> Apellido: </label>
-        <input type="text" placeholder="Apellido" id="Apellido" name="Apellido"><br><br>
-        
-        <label for="Edad"> Edad: </label>
-        <input type="number" placeholder="Edad" id="Edad" name="Edad" min = 18 max = 35><br><br>
-        
-        <label for="Correo"> Email: </label>
-        <input type="email" placeholder="Email" id="Correo" name="Correo"><br><br>
+            <label for="Apellido"> Apellido: </label>
+            <input type="text" placeholder="Apellido" id="Apellido" name="Apellido"><br><br>
+            
+            <label for="Edad"> Edad: </label>
+            <input type="number" placeholder="Edad" id="Edad" name="Edad" min = 18 max = 35><br><br>
+            
+            <label for="Correo"> Email: </label>
+            <input type="email" placeholder="Email" id="Correo" name="Correo"><br><br>
 
-        <label for="Contraseña"> Contraseña: </label>
-        <input type= "password" placeholder="Contraseña" id= "Contraseña" name= "Contraseña"><br><br>
+            <label for="Contraseña"> Contraseña: </label>
+            <input type= "password" placeholder="Contraseña" id= "Contraseña" name= "Contraseña"><br><br>
 
-        <button type= "submit"> Enviar</button>
-        
-        <!-- Place holder pone un texto estático en el input-->
-        <!-- Required quiere decir que ese campo es requerido-->
-    </form>
+            <button type= "submit"> Enviar</button>
+            
+            <!-- Place holder pone un texto estático en el input-->
+            <!-- Required quiere decir que ese campo es requerido-->
+        </form>
+    </article>
     <section class="promo"> <!-- El chiste en esta es poner un video, y a lado un texto-->
         <div class="Contenedor"> <!--En este contenedor hay imagen y video-->
-        <video controls poster="https://conceptodefinicion.de/wp-content/uploads/2014/03/codigo-.jpg">
+        <video class="explanatory-video"controls poster="https://conceptodefinicion.de/wp-content/uploads/2014/03/codigo-.jpg">
         <!--El source es para decir que se tienen distintos formatos de video, el navegador mostrará con el que es más compatible
         Se recomienda poner varios tipos, para que los dispositivos puedan correr el video-->
         <source
@@ -118,7 +170,22 @@
     </section>
 
     <section class="features">
-        <article class="feature-art">Característica 1</article>
+        <article class="feature-art">
+            <div class="feature-content">
+                <figure>
+                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_publish.png" alt="Publish icon">
+                </figure>
+            <h3>Fill your blog with engaging articles</h3>
+            <p>Publish to your blog in less time than it takes to drink your morning coffee.</p>
+            <a href="./index.html">Publish Instantly</a>
+            </div>
+
+            <div class="feature-image">
+                <figure>
+                <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_publish.png" alt="Publish example">
+                </figure>
+            </div>
+        </article>
         <article class="feature-art">Característica 2</article>
         <article class="feature-art">Característica 3</article>
         <article class="feature-art">Característica 4</article>

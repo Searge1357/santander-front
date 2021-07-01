@@ -169,13 +169,13 @@ li {
     */
 
     /*Reto 3 segunda parte, es lo mismo que la primera, pero con atajos*/
-    grid-template:  repeat(2, 330px) / repeat(2,1fr) ;
+    grid-template:  repeat(2, 330px) / repeat(2, 1fr) ; /* Rows/columns */
 
     /*Una forma de poder usar la unidad fr para asignar el alto de las filas sería indicando un tamaño fijo al elemento contenedor, en nuestro caso, podríamos hacer:
 
 .features {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); 1fr indica una fracción
   height: 660px;
   grid-template-rows: repeat(2, 1fr);
 }
@@ -185,6 +185,67 @@ li {
 .feature-art{
     background-color: lightcyan;
     margin: 10px; 
-    width: 40%;
-    height: 50px;
+    width: 75%;
+    height: 200px;
+    display: flex; /*De esta forma los dos hijos de feature art se pondrán en formato flex*/
+}
+
+.feature-content img{
+    width: 50px;
+}
+
+.feature-image img{
+    height: 100%; 
+}
+
+/**Plantilla para todos los tamaños de pantalla Son como css diferentes*/
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+    body{
+        background-color: #fffbf7 ; /*Cambia el color de fondo del cuerpo*/
+        background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');
+    }
+    .navbar, .actions{
+        display: none;
+    }
+    h1{
+        font-size: 30px;
+        margin-top: 100px;
+    }
+    .banner > img {
+        width: 100%;
+    }
+    .publish {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .promo{
+        flex-direction: column;
+        max-width: 90%;
+    }
+    .explanatory-video{
+        width: 100%;
+    }
+
+    
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
+  
 }
