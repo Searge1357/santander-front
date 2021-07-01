@@ -72,14 +72,14 @@ li {
     margin-right: 20px;*/
     /*margin: 50px; Este engloba los 4 márgenes*/
 }
-
-.navbar { /*Este es del div, es el menú de navegación*/
+/*
+.navbar { /*Este es del div, es el menú de navegación
     width: 70%; /*El margin right de más abajo hace que la suma de los elementos
     de más de 100%, por lo que lo de abajo se recorre hacia abajo, por eso bajé esto a 
-    60%*/
+    60%
     text-align: left;
     color: #025157;
-}
+}*/
 
 .actions {
     width: 15%;
